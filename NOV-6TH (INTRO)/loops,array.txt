@@ -1,0 +1,87 @@
+November-6th 
+CONCEPTS covered:Loops,undefined,array (dynamic-push,unshift,pop)
+Introduction Of JavaScript...
+JAVASCRIPT IS AN INTERPETER
+1.DataType
+2.Variable-let,const,var.
+3.loop in js :for,while,do while
+4.functions
+5.arrow Funtions.
+
+//DataType read the Accio Job notes
+//LOOPS-for,while,do while,foreach
+
+//for loop syntax
+for(1;2;3){
+    //code
+}
+-from the above syntax when have 3 statements
+1->intialization
+2->condition 
+3->updation(pre/post increment ,decrement).
+=>THE ABOVE 3 STATEMENTS ARE OPTIONAL.
+
+//While Syntax:
+while(condition){
+    //stmt code
+    //updation (optional)
+}
+
+//do while syntax:
+do{
+    //code
+    //updation
+}while(condition); 
+even the condition is false it execute atleast once!!
+
+UNDEFINED: it returns the undefined if the var is declared  but assigned any values
+Example:
+let a;
+console.log(a); //undefined
+
+
+JS ARRAY ARE "DYNAMIC"+"Heterogeneous"=>Mutable
+ARRAY:Collection of Heterogeneous dataTypes stored in a continuous memory allocation 
+here it collects the group of data store in a linear Manner
+-denoted by [] where each element is separated by commas.
+1. always follow the O based indexing (0 to n-1).
+2.if the values is not mentioned in the given index return UNDEFINED.
+3.for OUTOFBOUND always if we are trying to get the value it return -UNDEFINED.
+4.applied same for negative index..-UNDEFINED.
+
+JS ARRAY ARE "DYNAMIC":means we are add and remove the elements
+ADD the elements in the ARRAY 
+1. add elements at the backside. => arr.push(value1,value2,...) push() is invoking the function.=>O(1)
+2. add elements at the frontside. =>arr.unshift(value1,value2,...); 
+unshift() =>O(n)
+
+REMOVE the elements in the ARRAY 
+1. remove elements at the backside. => arr.pop() pop() is an empty argument O(1)
+    pop() also return the deleted element where we store in the var and print
+2. remove elements at the frontside. =>arr.shift(); //remove the staring element
+   lly like pop returns the deletedElement.
+
+SPLICE METHOD IS used to "add" and "delete" the array from anywhere
+1. always return the deleted elements in the form of ARRAY.
+SYNTAX Of Splice METHOD
+
+arr.splice(index,count,a,b,c,d,e,f,...);
+index:indicates element index /starting indexof the element
+count:number of elemnts like1/2/3
+->in case count is 0 mean we are not removing the elements.
+which is a useful case where we can insert in blw the elements..
+
+a,b,c,d,e,f,...:are the element which are used for adding
+
+
+-if the count is not mentioned it removes all the element till end
+example a=[1,2,3,4,55,"srinija"]
+a.splice(2) //[1,2] 
+Including  the index 2 all the elements get remove from the array and returns in the form of array..
+
+a.splice(i,0,values);  =>used for the adding the elements in the middle..
+
+SLICE METHOD:used to get the subarray from the main array.
+and returns in the form of Array
+SYNTAX:arr.slice(startindex,endindex);
+                 inclusive,exclusive
