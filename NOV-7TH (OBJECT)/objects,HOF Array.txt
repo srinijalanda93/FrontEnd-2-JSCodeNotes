@@ -1,0 +1,77 @@
+NOVEMBER 7TH 
+CONCEPT:for in loop (keys/index) ,for of loop (elements)
+CONCEPT:object,HOF on Arrays,HOF,callback function,predefined HOF..
+CONCEPT:predefined HOF on array (additional)=>forEach
+
+OBJECT:CURD,iterating on it.
+Object are similar to array but we need to make customized indexing
+"whole JS deals with the OBJECTS ONLY".
+define:object are collection of data associated with keys value pairs..
+OBJECT are denoted by curly braces key:value and separated by commas.
+-SYNTAX OF OBJECT(C:CREATE)
+ let/var/const obj={
+    key1:value1,
+    key2:value2,
+    key3:value3,...keyn:value_n
+ };
+
+
+OBJECT:READ,UPDATE,DELETE:
+OBJECT(R:READ)
+-Accessing the objects value can be done in 2 ways..
+1.objectName.keyName
+2.objectName["keyName"] //fall under the customized indexing,always enclosed with dounble quotes (string).
+
+OBJECT(U:UPDATE)
+1.objectName.keyName=Value;
+2.1.objectName["keyName"]=Value;
+
+OBJECT(D:DELETE)
+Object DELETE the value:
+-For Remove the values from the object it won't follow splice mehod.
+-it follow delete keyword followed by the objName.keyName
+SYNTAX: 
+"delete objName.keyName";
+
+//OBJECT iterating on it.
+step1:obtain the key from the object=>return in the form of ARRAY
+step2:from the above step 1arrayKet we can access the values
+
+step1:Give the keys in the form of ARRAY
+var arrKeys=Object.keys(objName); //Object is built-in constructor keys() is a function
+var arrValues=Object.values(objName);
+
+ITERATING USING for in and for of
+=>for in :always on keys /index;
+=>for of :always on values/elements (it won't run on the objects)
+
+HIGH ORDER FUNCTION(HOF)
+Define function:A function is set of code which is reusable
+1.increase reability,reusability.
+2.function are DATATYPE IN js.
+Syntax: 
+1.CREATE THE FUNCTION
+function fuctionName(parameter1,p2...){
+    //code 
+}
+2.CALLING THE FUNCTION
+fuctionName(argument1,a2,a3...);
+
+PARAMETER VS ARGUMENT 
+PARAMETER:WHICH TAKE THE VALUES or CAPTURE THE VALUES (declaration of function there we call those as parameter)
+ARGUMENT:WHICH PASS THE VALUES (during the function call we call thos values as arguments)
+NAME CONVENTION OF functionName :alway starts with _,$,alphabet.
+-"FUNCTION IN JS ARE DATATYPE"
+
+Type of Function:
+1.Named Function->Regular Fun
+2.UnNamed Function->Regular Fun (since fun is datatype)
+
+UnNamed Function:SYNTAX
+var/let/const variable=function(p1,p2,p3...){}
+
+HOF:A function which takes/RETURNS another Function is called HOF
+CALLBACK :A function passed as argument into some other Function Function is called as CALL BACK FUNCTION.
+
+in array we have some built-in method=>push(),unshift(),pop,shift,slice(si,ei),splice(i,c,v1,v2..) =>NOT HOF
+SOME ADDITIONAL built-in methods=>forEach,map,filter,reduce...
