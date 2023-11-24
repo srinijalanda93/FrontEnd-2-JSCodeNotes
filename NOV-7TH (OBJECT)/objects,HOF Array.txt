@@ -89,7 +89,7 @@ SOME ADDITIONAL built-in methods on ARRAYS=>forEach,map,filter,reduce...
  *     returns an array of any length
  */
 
-forEach() :it is used to iterate the give  Array and it used for ARRAY ONLY and return some value
+forEach() :it is used to iterate the give  Array and it used for ARRAY ONLY.
 1.forEach() always take one mandatory Argument which need to be FUNCTION.
 2.the function (which is passed an  argument ) into forEach it take 3 parameter
 =>mean say during the invoking process the function(which is passed an  argument ) take 3 parameter.
