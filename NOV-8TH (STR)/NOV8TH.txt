@@ -1,0 +1,40 @@
+CONCEPT:HOF(REDUCE METHOD) ,STRINGS
+REDUCE (HINT USED FOR SUMMATION) //return the values
+SYNTAX :arr.reduce(cb,previous) ;
+Reduce :used on the array where it take callback function.
+1.arr.reduce(callback,prevous);=>callfunction invokes for length of array.
+2.the callback function takes=> 3 parameter :previous,currentele,indexnoele 
+3.during iteration 
+frist iteration it return the values what we mentioned 
+second iteration :take the previous what we returned in the (previous values) frist iteration.
+
+=>when second Argument is not passed (cb executes runs n-1 times)
+=>it will the frist element as previous values and starts at iteartion at 1st index (array)
+//simple from the above sentence it return the SUM OF ARRAY.
+
+STRINGS:IN JS STRING ARE IMMUTABLE IN NATURE
+string:collect of letter enclosed with single or double quotes..
+1. always start at 0 indexing.
+2. accessing the specific character from the string
+a. using index varName[index_no]; //even for outOfBound give undefine
+b. using varName.charAt(index_no);
+
+=>SLICE METHOD:varName.slice(si,ei) to get the substring
+=>COMPARE METHOD:
+=>concate Mtehod: varName1.concat(varName2) or varName1.concat(p1,p2,p3,p4....pn)
+=>SPLIT METHOD: varName.split("delimiter") ->return in the form of array
+=>JOIN METHOD:varName.join("delimiter") ->return the string.
+=>charCodeAt:varName.charCodeAt(index_no)-returns the ascii value of that particular alphabet
+=>acsii no - char using String.fromCharCode(index_no); (String is function here)
+
+//SORT THE ARRAY WITH string values..
+//But sort the array which elements Numeric  where it consider every element in the form String and convert in lexcial manner
+//for this we use compare function
+arr.sort(function(a,b){
+    //scenories for increasing 3,10 b=>+ve a=>-ve
+    return a>b(10>3):a-b +ve ;
+    //scenorie 2:
+     return a>b(3>10):a-b -ve ;
+     //scenorie 3:
+     return a==b(3==10):a-b 0 ;
+    })
