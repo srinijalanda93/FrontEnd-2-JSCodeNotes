@@ -1,0 +1,36 @@
+Novemeber-20 class 
+CONCEPT DOM topic Event Listener
+1.What is Event ?(undone)=>action on the webpage
+ex:scroll,click,move,submit the form
+CATEGORIES OF THE EVENTS
+1.MOUSE EVENTS
+2.KEYBOARD EVENTS
+3.HTML EVENTS
+EVENT Listener:mean a function or piece of code that will executed when it is triggered.
+
+MOUSE EVENTS:
+onclick,ondblclick,onmouseenter,onmouseleave=>HTML ATTRIBUTES
+->we cannot add muliple event listener in the HTML.
+->possible through the javascript.
+Writing in the javascript using EventListeners
+//Upadation of the Id
+object.id="new Id name";
+FORM EVENTS=>action="/" self page
+by default the insert data in the form are append to the url we call it as "QUERY PARAMETER".
+-Where ever EventListener callback it will send the objects to the developer
+-Here submit argument works only for the FORMS
+button1.addEventListener("click",(eventobj)=>{
+    console.log(eventobj);
+});
+-eventobj give the information about the event object=>used User
+properties are clientx,Client Y,altkey,traget (target the event occured).
+-evenobj.preventDefault(); //FORM
+-preventDefault() used to stop the appending of the data to the url if the action attribute is self defined (self page)
+-by invoking the eventobj using preventDefault() stop to append the url
+-DIFFERENCE BLW SUBMIT AND CLICK 
+=>Submit is responsible for collecting the data from the FORMS
+=>Click is some isolated one!
+//Usage of 
+-formElement.name=>give the object of that element
+-from the above sentences formElement.title.value->give the value of the input which have name="title"
+
