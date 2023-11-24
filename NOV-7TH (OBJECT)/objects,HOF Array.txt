@@ -1,7 +1,7 @@
 NOVEMBER 7TH 
 CONCEPT:for in loop (keys/index) ,for of loop (elements)
-CONCEPT:object,HOF on Arrays,HOF,callback function,predefined HOF..
-CONCEPT:predefined HOF on array (additional)=>forEach
+CONCEPT:object,HOF on Arrays,callback function,predefined HOF..
+CONCEPT:predefined HOF on array (additional)=>forEach,map,filter
 
 OBJECT:CURD,iterating on it.
 Object are similar to array but we need to make customized indexing
@@ -28,14 +28,14 @@ OBJECT(U:UPDATE)
 
 OBJECT(D:DELETE)
 Object DELETE the value:
--For Remove the values from the object it won't follow splice mehod.
+-For Remove the values from the object it won't follow splice method.
 -it follow delete keyword followed by the objName.keyName
 SYNTAX: 
 "delete objName.keyName";
 
 //OBJECT iterating on it.
 step1:obtain the key from the object=>return in the form of ARRAY
-step2:from the above step 1arrayKet we can access the values
+step2:from the above step 1 arrayKey we can access the values
 
 step1:Give the keys in the form of ARRAY
 var arrKeys=Object.keys(objName); //Object is built-in constructor keys() is a function
@@ -59,7 +59,7 @@ fuctionName(argument1,a2,a3...);
 
 PARAMETER VS ARGUMENT 
 PARAMETER:WHICH TAKE THE VALUES or CAPTURE THE VALUES (declaration of function there we call those as parameter)
-ARGUMENT:WHICH PASS THE VALUES (during the function call we call thos values as arguments)
+ARGUMENT:WHICH PASS THE VALUES (during the function call we call those values as arguments)
 NAME CONVENTION OF functionName :alway starts with _,$,alphabet.
 -"FUNCTION IN JS ARE DATATYPE"
 
@@ -74,4 +74,47 @@ HOF:A function which takes/RETURNS another Function is called HOF
 CALLBACK :A function passed as argument into some other Function Function is called as CALL BACK FUNCTION.
 
 in array we have some built-in method=>push(),unshift(),pop,shift,slice(si,ei),splice(i,c,v1,v2..) =>NOT HOF
-SOME ADDITIONAL built-in methods=>forEach,map,filter,reduce...
+SOME ADDITIONAL built-in methods on ARRAYS=>forEach,map,filter,reduce...
+
+/**
+ * forEach =>  ( n => length of the array )
+ *      Takes a cllaback function and invokes that callback for `n` number of times.
+ *      returns nothing.
+ * map    =>
+ *      Takes a cllaback function and invokes that callback for `n` number of times.
+ *      returns another array of same length.
+ *
+ * filter =>
+ *      Takes a cllaback function and invokes that callback for `n` number of times.
+ *     returns an array of any length
+ */
+
+forEach() :it is used to iterate the give  Array and it used for ARRAY ONLY and return some value
+1.forEach() always take one mandatory Argument which need to be FUNCTION.
+2.the function (which is passed an  argument ) into forEach it take 3 parameter
+=>mean say during the invoking process the function(which is passed an  argument ) take 3 parameter.
+3 parameters=>elements itself, index of ele,arry list... so these 3 values are given to the forEach
+3.forEach will not RETURN anything.. returns=>undefined..
+
+Example:
+let arr=[1,2,3,4,5,6];
+let callback=function(){console.log("stmt")}
+let x=arr.forEach(callback); //runs based on arr.length
+
+here forEach method takes other function(callback) 
+internally the function which is passed as argument
+involved based on the give array length 
+
+Map method on Arrays(HINT :need to extra same array  length)
+1.similar to forEach =>take the callback function invoke length no of times.
+2.BUT returns another array of same length.
+
+internal work of map(f(){}) during the executes of map()
+step1:creates an array of the same length;
+step2:and return undefined (if don't specific) in the array
+
+filter =>
+ *      Takes a cllaback function and invokes that callback for `n` number of times.
+ *     returns an array of any length
+ =>only returns the  boolean (true) vlaues only in the form of array
+ 
