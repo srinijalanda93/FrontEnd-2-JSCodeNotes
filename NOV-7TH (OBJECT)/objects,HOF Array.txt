@@ -89,7 +89,7 @@ SOME ADDITIONAL built-in methods on ARRAYS=>forEach,map,filter,reduce...
  *     returns an array of any length
  */
 
-forEach() :it is used to iterate the give  Array and it used for ARRAY ONLY and return some value
+forEach() :it is used to iterate the give  Array and it used for ARRAY ONLY.
 1.forEach() always take one mandatory Argument which need to be FUNCTION.
 2.the function (which is passed an  argument ) into forEach it take 3 parameter
 =>mean say during the invoking process the function(which is passed an  argument ) take 3 parameter.
@@ -99,7 +99,7 @@ forEach() :it is used to iterate the give  Array and it used for ARRAY ONLY and 
 Example:
 let arr=[1,2,3,4,5,6];
 let callback=function(){console.log("stmt")}
-let x=arr.forEach(callback); //runs based on arr.length
+arr.forEach(callback); //runs based on arr.length
 
 here forEach method takes other function(callback) 
 internally the function which is passed as argument
@@ -111,7 +111,7 @@ Map method on Arrays(HINT :need to extra same array  length)
 
 internal work of map(f(){}) during the executes of map()
 step1:creates an array of the same length;
-step2:and return undefined (if don't specific) in the array
+step2:and return undefined (if don't specific) in the array (step1 created array)
 
 filter =>
  *      Takes a cllaback function and invokes that callback for `n` number of times.
