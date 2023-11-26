@@ -55,7 +55,7 @@ ADD the elements in the ARRAY
 2. add elements at the frontside. =>arr.unshift(value1,value2,...); 
 unshift() =>O(n)
 
-REMOVE the elements in the ARRAY 
+REMOVE the elements from the ARRAY 
 1. remove elements at the backside. => arr.pop() pop() is an empty argument O(1)
     pop() also return the deleted element where we store in the var and print
 2. remove elements at the frontside. =>arr.shift(); //remove the staring element
