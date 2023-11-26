@@ -61,11 +61,13 @@ REMOVE the elements from the ARRAY
 2. remove elements at the frontside. =>arr.shift(); //remove the staring element
    lly like pop returns the deletedElement.
 
-SPLICE METHOD IS used to "add" and "delete" the array from anywhere
+SPLICE METHOD IS used to "add" and "delete" the array elements from anywhere.
 1. always return the deleted elements in the form of ARRAY.
-SYNTAX Of Splice METHOD
 
+SYNTAX Of Splice METHOD
 arr.splice(index,count,a,b,c,d,e,f,...);
+
+koi
 index:indicates element index /starting indexof the element
 count:number of elemnts like1/2/3
 ->in case count is 0 mean we are not removing the elements.
