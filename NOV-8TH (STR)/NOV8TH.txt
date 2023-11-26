@@ -30,6 +30,10 @@ b. using varName.charAt(index_no);
 //SORT THE ARRAY WITH string values..
 //But sort the array which elements Numeric  where it consider every element in the form String and convert in lexcial manner
 //for this we use compare function
+
+//SORT=>ARRAY(IN NUMERIC,IN STRING)...
+-for array(string) lexical dictionary manner.
+-for array(Numeric) take each numeric into string and arrange then lexical dictionary.
 arr.sort(function(a,b){
     //scenories for increasing 3,10 b=>+ve a=>-ve
     return a>b(10>3):a-b +ve ;
